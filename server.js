@@ -14,7 +14,7 @@ app.use(express.json())
 
 // for HANDLEBARS paths
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-
+app.use(express.static(__dirname));
 app.set('view engine', 'handlebars');
 
 app.use(routes)
