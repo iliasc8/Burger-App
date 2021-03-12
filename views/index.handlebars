@@ -1,0 +1,22 @@
+<h1 style="mmargin-top: 20px;">Eat Da Burger</h1>
+<div class="container">
+    <div class="row ">
+        <div class="col-6" 
+            {{#each burgers}}
+            {{#unless devoured}}
+            <li style="color: white;"> {{burger_name}} </li>
+            <button class="btn btn-sm btn-primary change-eaten" data-id={{id}}>Devour it!</button>
+            {{/unless}}
+            {{/each}}
+        </div>
+
+
+        <div class="col-6">
+            {{#each burgers}}
+            {{#if devoured}}
+            <li style="color: white; "> {{burger_name}}</li>
+            {{/if}}
+            {{/each}}
+        </div>
+    </div>
+</div>

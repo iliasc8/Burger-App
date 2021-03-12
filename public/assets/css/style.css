@@ -1,0 +1,26 @@
+body {
+    background-image: url(../img/burger.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+   
+}
+
+h1 {
+   
+  text-align: center;
+  color:white;
+  margin: 3%;
+}
+
+
+input {
+    text-align: center;
+  }
+  
+  ::-webkit-input-placeholder {
+    text-align: center;
+  }
+  
+  :-moz-placeholder {
+    text-align: center;
+  }
